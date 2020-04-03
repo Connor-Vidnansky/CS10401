@@ -1,0 +1,68 @@
+#Connor Vidnansky
+#s1285949
+
+#algorithim
+#Get input from the user until they enter -99 to end
+#If the user enters -99, go to the END
+#If the user enters value less than zero:
+#   print 'Value must be greater than 0'
+#   ask user to re-enter input 
+#Based on the value entered by the user determine the correct message:
+#   If richter value > = 8
+#       print "most structures will fall"
+#   If richter value > = 7
+#       print "many buildings destroyed"
+#   If richter scale > = 6
+#       print "many buildings considerably damaged, some collapse"
+#   If richter scale > = 4.5
+#       print "damage to poorly constructed buidlings"
+#REPEAT
+#END
+
+#peseudocode
+#While richterValue not = -99
+#   print "Enter the richter scale value of -99 to end: "
+#   Input richterValue
+#   If richterValue = -99
+#       Stop the program
+#   If richterValue < 0
+#      print "Value must be greater than 0"
+#       go back to the top
+#   If richterValue > = 8
+#       print "most structures will fall"
+#   If richterValue > = 7
+#       print "many buidlings destoyed"
+#   If richterValue > = 6
+#       print "many buildings considerably damaged, some collapse"
+#   If richterValue= 4.5
+#       print "damage to poorly constructed buildings"
+
+
+#code
+
+richterValue= float ( input ("Enter the richter scale value of -99 to end: "))
+while (richterValue != -99):
+    if richterValue < 0:
+        print ("value must be greater than 0")
+        richterValue = float (input ("Enter the richter scale value of -99 to end: "))
+        continue
+    if richterValue >= 8:
+        print ("Most structures will fall")
+    elif richterValue >= 7:
+            print("Many buldings destroyed.")
+    elif richterValue >= 6:
+            print("Many buildings considerably damaged, some collapse.")
+    elif richterValue >= 4.5:
+            print("Damage to poorly constructed buildings.")
+    else:
+            print("No destruction of buildings.")
+
+    richterValue = -99
+
+
+        
+#  richterValue = int(input ("Enter the richter scale value of -99 to end: "))
+        
+        
+
+
